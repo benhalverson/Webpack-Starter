@@ -42,12 +42,43 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(1);
+	module.exports = __webpack_require__(2);
+
+
+/***/ },
+/* 1 */
 /***/ function(module, exports) {
 
-	document.write('lorem text asdf');
+	// Simulating global plugin like jQuery
+	console.log('logging from the utils.js file');
+
+
+/***/ },
+/* 2 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(3);
+	document.write('lorem helltext asdf');
 
 	console.log('App loaded');
 
+
+/***/ },
+/* 3 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	var login = function login(username, password) {
+	  if (username !== 'admin' || password !== 'admin1') {
+	    console.log('incorrect password');
+	  }
+	};
+
+	login('admin', 'test');
 
 /***/ }
 /******/ ]);
