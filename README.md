@@ -2,12 +2,9 @@
 
 Webpack is used to combine files, minifying maintaing file order transpliation and linting.
 
-##usage
-- webpack ./app.js bundle.js  creates the bundled file
-- webpack will recompile
-
-## npm install webpack-dev-server -g to use the webpack http server
-
-- webpack-dev-server will launch a web server
-http://localhost:8080/webpack-dev-server/bundle is used for live reloading
-- webpack-dev-server --inline will allow you to use localhost:8080 with live reloading
+## Usage
+- ```npm install webpack-dev-server -g``` to use the webpack http server
+- ```npm install webpack -g```
+- ```npm start``` to run webpack in production mode a seperate http-server is required.
+- ```npm run dev``` will start a dev-server with live reloading.
+- localhost:8080
