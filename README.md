@@ -1,2 +1,3 @@
 # Webpack-Starter
-Starter kit using webpack
+
+Webpack is used to combine files, minifying maintaing file order transpliation and linting.
